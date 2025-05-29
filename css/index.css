@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Edu+NSW+ACT+Foundation:wght@500;700&family=Nunito:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
 .cabecalho{
 	display: flex;
 	flex-direction: column;
@@ -9,10 +17,15 @@
 	
 }
 .cabecalho__titulo{
-	font-size: 32px;
+	font-size: 40px;
 	font-weight: 500;
 	padding-bottom: 16px;
+	
 
+}
+
+.cabecalho__paragrafo{
+	font-size: 24px;
 }
 .cartao{
 	display: flex;
@@ -33,10 +46,11 @@
 	height: 270px;
 }
 .principal__texto{
-	text-align:unset ;
+	text-align:start;
+	font-weight: 600;
 	width: 300px;
 	padding: 1rem;
-	font-size: 20px;
+	font-size: 24px;
 
 }
 
@@ -44,19 +58,29 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
+	border: none;
 }
 .campo__nome input, button{
-	background: none;
-	border: 0.5px solid #002B5B;
+	background: #e9d8be;
+	border: none;
 	padding: 12px;
 	border-radius: 2px;
+	font-size: 28px;
+}
+
+input::placeholder{
+	color: #002B5B	;
+	opacity: 0.6;
 }
 
 .campo__nome button{
 	border-left: none;
+	background-color: #002B5B;
+	color: white	;
+	transition: 500ms;
 }
 .campo__nome button:hover{
-	background-color: #e9d8be;
+	background-color: #023979;
 	cursor: pointer;
 }
 
@@ -75,6 +99,10 @@ body{
 	flex-direction: column;
 	gap: 1rem;
 	align-items: center;
+	h2{
+		font-size: 32px;
+	}
+	font-size: 20px;
 }
 .nome{
 	text-align: center;
